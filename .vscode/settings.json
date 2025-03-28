@@ -1,0 +1,10 @@
+{
+    "editor.linkedEditing": true,
+    "emmet.includeLanguages": {
+        "njk": "html"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.associations": {
+        ".html": "njk"
+    }
+}
