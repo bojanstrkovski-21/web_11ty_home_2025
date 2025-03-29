@@ -192,6 +192,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 40px;
 }
 
@@ -421,6 +424,12 @@ footer {
 
   .servis {
     width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .naslov h1 a {
+    font-size: 32px;
   }
 
   footer {
