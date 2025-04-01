@@ -429,7 +429,7 @@ footer {
   }
 
   .naslov h1 a {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   footer {
@@ -446,8 +446,8 @@ h3 {
 }
 
 .linux-logo {
-  margin-right: 2rem;
-  height: 140px;
-  width: 140px;
+  margin-right: 1.6rem;
+  height: 120px;
+  width: 120px;
 }
 
