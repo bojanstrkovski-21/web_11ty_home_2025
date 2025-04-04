@@ -146,6 +146,7 @@ header {
 
 .dropdown_menu.open {
   height: 300px;
+  position: relative;
 }
 
 
