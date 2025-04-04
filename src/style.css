@@ -432,6 +432,10 @@ footer {
     font-size: 26px;
   }
 
+  .dropdown_menu {
+    width: 100%;
+  }
+
   footer {
     margin-top: 20px;
     padding: 30px;
