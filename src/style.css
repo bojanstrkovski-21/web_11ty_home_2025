@@ -229,10 +229,6 @@ header {
     backdrop-filter: blur(8px);
   }
 
-  .dropdown_menu.open {
-  position: relative;
-}
-
 }
 
 @media (max-width: 576px) {
