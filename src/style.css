@@ -1,4 +1,4 @@
-s/* FONT IMPORTS*/
+/* FONT IMPORTS*/
 @import url(https://fonts.bunny.net/css?family=architects-daughter:400);
 @import url(https://fonts.bunny.net/css?family=berkshire-swash:400);
 @import url(https://fonts.bunny.net/css?family=fira-sans-condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,800,800i,900,900i);
@@ -41,9 +41,8 @@ body {
  /* #background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80'); */
   /*background-image: linear-gradient(rgba(0, 8, 51, 0.6),rgba(0, 8, 51, 0.6)), url("img/background.avif");*/
   background-image: linear-gradient(rgba(0, 8, 51, 0.5),rgba(0, 8, 51, 0.5)), url("/assets/img/bg.png");
-  background-position: center;
+  /*background-position: center;*/
   background-size: cover;
- background-repeat:;
   height:auto;
  /* background-color: black; */
 /*   backdrop-filter: blur(7px);
@@ -146,8 +145,9 @@ header {
 }
 
 .dropdown_menu.open {
-  height: 240px;
+  height: 300px;
 }
+
 
 .dropdown_menu li{
   padding: 0.7rem;
@@ -192,6 +192,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 40px;
 }
 
@@ -289,7 +292,7 @@ font-weight: 700;
 
 .naslov-h2 {
   color: antiquewhite;
-  <!--border: 0.5px antiquewhite;-->
+  border: 0px antiquewhite;
   border-style:inset;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -320,6 +323,9 @@ footer {
 
 @media (max-width: 1670px) {
 
+  body {
+    background-size:cover;
+  }
   .main {
     margin-left: 10px;
   }
@@ -394,7 +400,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
+  .main {
+   min-height: 55vh;
+  }
 
 }
 
@@ -416,11 +424,18 @@ footer {
 
   .servis {
     width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .naslov h1 a {
+    font-size: 32px;
+    font-size: 26px;
   }
 
   footer {
-    margin-top: 40px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 30px;
   }
 }
 
@@ -432,8 +447,10 @@ h3 {
 }
 
 .linux-logo {
+  margin-right: 2rem;
+  height: 140px;
+  width: 140px;
   margin-right: 1.6rem;
   height: 120px;
   width: 120px;
 }
-
