@@ -169,17 +169,6 @@ a:hover {
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 1205px){
-  /*.navbar .links {
-    margin-right: 1rem;
-  }
-
-  .navbar .logo {
-    margin-left: 1rem;
-  }*/
-
-}
-
 /*.navbar li a:is(:link, :active, :visited){
   color: white;
 }*/
@@ -208,36 +197,10 @@ a:hover {
   color: burlywood;
 }*/
 
-
-
-@media (max-width: 992px){
-/*
-  .navbar .links {
-    display: none;
-  }
-
- .navbar .toggle_btn {
-    display: block;
-    margin-right: 2rem;
-  }
-
-  .dropdown_menu {
-    display: block;
-    width: 100%;
-    backdrop-filter: blur(8px);
-    right: 0;
-  }
-
-}*/
-
 @media (max-width: 576px) {
   body {
    height: auto;
   }
-  /*.dropdown_menu {
-    left: 0;
-    width: unset;
-  }*/
 
   .container {
     max-width: 90%;
@@ -427,10 +390,10 @@ footer {
     text-align: center;
   }
 
-  .naslov h1 a {
+/*  .naslov h1 a {
     font-size: 32px;
     font-size: 26px;
-  }
+  }*/
 
   footer {
     margin-top: 20px;
