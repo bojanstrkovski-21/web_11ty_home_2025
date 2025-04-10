@@ -3,6 +3,7 @@
 @import url(https://fonts.bunny.net/css?family=berkshire-swash:400);
 @import url(https://fonts.bunny.net/css?family=fira-sans-condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,800,800i,900,900i);
 @import url(https://fonts.bunny.net/css?family=fira-sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700i,800,800i,900,900i);
+@import url(https://fonts.bunny.net/css?family=poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
 @import url(https://fonts.bunny.net/css?family=black-ops-one:400);
 @import url(https://fonts.bunny.net/css?family=cabin-sketch:400,700);
 @import url(https://fonts.bunny.net/css?family=pt-sans:400,400i,700,700i);
@@ -15,9 +16,11 @@
   --ff-5: 'Black Ops One', display;
   --ff-6: 'Cabin Sketch', display;
   --ff-7: 'PT Sans', sans-serif;
+  --ff-8: 'Poppins', sans-serif;
 
   --clr-bg: #354059;
   --clr-yellow: #d79921;
+  --clr-gold-1: #b9b7a6;
   --clr-samanta: #00ffff;
   --clr-dsamanta: #10ebe4;
   --clr-purple: #bd93f9;
@@ -28,27 +31,51 @@
   --clr-dwhite: #eeeeee;
   --clr-dim1: hsl(265, 90%, 70%);
   --clr-drac: #4e376e;
+
+  --fs--3: clamp(0.5208rem, 0.45rem + 1vw, 0.8365rem);
+  --fs--2: clamp(0.7378rem, 0.5335rem + 1.0218vw, 1.6rem);
+  --fs--1: clamp(1.2676rem, 0.6212rem + 1.0218vw, 2rem);
+  --fs-0: clamp(1.0625rem, 0.7218rem + 1.7037vw, 2.5rem);
+  --fs-1: clamp(1.275rem, 0.8365rem + 2.1926vw, 3.125rem);
+  --fs-2: clamp(1.53rem, 0.9667rem + 2.8163vw, 3.9063rem);
+  --fs-6: clamp(1.275rem, 0.7218rem + 2.1926vw, 1.4621rem);
+  --fs-3: clamp(1.836rem, 1.1138rem + 3.611vw, 4.8828rem);
+  --fs-4: clamp(2.2032rem, 1.2787rem + 4.6226vw, 6.1035rem);
+  --fs-5: clamp(2.6438rem, 1.4621rem + 5.9088vw, 7.6294rem);
 }
 
 * {
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--ff-8);
 }
 
-body {
+body, html {
  /* #background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80'); */
   /*background-image: linear-gradient(rgba(0, 8, 51, 0.6),rgba(0, 8, 51, 0.6)), url("img/background.avif");*/
+  width: 100%;
+  height: 100%;
+  margin: 0;
   background-image: linear-gradient(rgba(0, 8, 51, 0.5),rgba(0, 8, 51, 0.5)), url("/assets/img/bg.png");
-  /*background-position: center;*/
+  background-position: center;
   background-size: cover;
-  height:auto;
+  /*background-repeat:;*/
+  /*height:auto;*/
+  font-family: var(--ff-8);
  /* background-color: black; */
 /*   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px) */
 }
 
+h2 {
+  font-family: var(--ff-7);
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+}
 
 li {
   list-style: none;
@@ -148,7 +175,6 @@ a:hover {
   height: 240px;
 }
 
-
 .dropdown_menu li{
   padding: 0.7rem;
   display: flex;
@@ -175,7 +201,7 @@ a:hover {
 
 /*.navbar li a:is(:link, :active, :visited).active{
   color:orange;
-}
+}*/
 
 .naslov {
   display: flex;
@@ -195,7 +221,7 @@ a:hover {
 .naslov h1 a {
   font-size: 45px;
   color: burlywood;
-}*/
+}
 
 @media (max-width: 576px) {
   body {
@@ -209,6 +235,16 @@ a:hover {
   footer {
     padding: 10px;
     margin-top: 50px;
+  }
+
+  .linux-logo {
+    margin-right: 0.5rem;
+    height: 120px;
+    width: 120px;
+  }
+  
+  .naslov .h1-linux {
+    font-size: 18.5px;
   }
 }
 
@@ -234,7 +270,7 @@ line-height: 2.2;
 backdrop-filter: blur(2px); */
 border: none;
 border-radius: 10px;
-width: 115%;
+/*width: 115%;*/
 height: fit-content;
 }
 
@@ -254,11 +290,12 @@ font-weight: 700;
 
 .naslov-h2 {
   color: antiquewhite;
-  border: 0px antiquewhite;
-  border-style:inset;
+  /*border: 0.5px antiquewhite;*/
+  border-style: inset;
+  border: none;
   border-radius: 10px;
   margin-bottom: 5px;
-  max-width: 95%;
+  max-width: 100%;
   margin-left: 8px;
 }
 
@@ -313,7 +350,7 @@ footer {
 
   .main {
     grid-template-columns: 1fr;
-    margin-top: 95px;
+    margin-top: 50px;
   }
 
   .container {
@@ -390,14 +427,13 @@ footer {
     text-align: center;
   }
 
-/*  .naslov h1 a {
-    font-size: 32px;
+ .naslov h1 a {
     font-size: 26px;
-  }*/
+  }
 
   footer {
-    margin-top: 20px;
-    padding: 30px;
+    margin-top: 40px;
+    padding: 10px;
   }
 }
 
@@ -409,10 +445,7 @@ h3 {
 }
 
 .linux-logo {
-  margin-right: 2rem;
-  height: 140px;
-  width: 140px;
-  margin-right: 1.6rem;
+  margin-right: 0.5rem;
   height: 120px;
   width: 120px;
 }
@@ -575,5 +608,9 @@ nav ul li a:hover::after {
     nav ul li a {
         /*font-size: 16px;*/
         padding: 12px 20px;
+    }
+
+    .h1-linux {
+      font-size: 18px;
     }
 }
