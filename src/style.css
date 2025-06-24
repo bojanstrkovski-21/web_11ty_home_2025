@@ -482,7 +482,12 @@ nav:hover {
     transition: color 0.3s ease;
 }
 
-.logo:hover {
+.logo a {
+  font-family: var(--ff-1);
+  color: #de8f4e;
+}
+
+.logo a:hover {
     color: #f4a261;
 }
 
