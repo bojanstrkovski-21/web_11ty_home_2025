@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/bojanstrkovski-21/web_11ty_home_2025#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.1.2"
   }
 }
