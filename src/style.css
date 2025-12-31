@@ -219,6 +219,16 @@ a:hover {
   font-style: italic;
 }
 
+.break-mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .break-mobile {
+    display: inline;
+  }
+}
+
 .naslov h1 a {
   font-size: 45px;
   color: burlywood;
@@ -723,6 +733,11 @@ nav ul li a:hover::after {
     padding: 10px 16px;
     font-size: 0.9rem;
   }
+
+  .tab-content .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -734,6 +749,24 @@ nav ul li a:hover::after {
   .tab-button {
     width: 100%;
     padding: 12px;
+  }
+
+  .tab-content .list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .tab-content-wrapper {
+    padding: 10px 5px;
+  }
+
+  .tab-content .container {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .list li {
+    text-align: center;
   }
 }
 
